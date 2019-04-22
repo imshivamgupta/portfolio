@@ -35,6 +35,12 @@ section.home {
   background-position: bottom;
 }
 
+@media screen and (max-width: 360px) {
+  section.home {
+    background: none;
+  }
+}
+
 section.home header {
   position: relative;
   width: 80%;
@@ -45,6 +51,12 @@ section.home header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 360px) {
+  section.home header {
+    width: 44%;
+  }
 }
 
 section.home header .img-round {
@@ -103,6 +115,14 @@ section.home main {
   text-align: center;
 }
 
+@media screen and (max-width: 360px) {
+  section.home main {
+    width: 75%;
+    margin: 3rem auto;
+    text-align: left;
+  }
+}
+
 section.home main .custom-button {
   font-family: inherit;
   font-weight: 700;
@@ -150,6 +170,12 @@ section.project .row {
           justify-content: space-evenly;
 }
 
+@media screen and (max-width: 360px) {
+  section.project .row {
+    display: block;
+  }
+}
+
 section.project a {
   text-decoration: none;
 }
@@ -163,6 +189,13 @@ section.project .card {
   float: left;
   padding: 0 1.7rem;
   width: 45%;
+}
+
+@media screen and (max-width: 360px) {
+  section.project .card {
+    width: 100%;
+    float: none;
+  }
 }
 
 section.project .card .menu-content {
@@ -245,7 +278,7 @@ section.project .card .text {
 }
 
 section.project .project-1 .wrapper {
-  background: url("/img/screen.png") no-repeat;
+  background: url("../img/screen.png") no-repeat;
   background-size: contain;
   background-size: 175%;
   background-position: -160px 0;
@@ -271,7 +304,7 @@ section.project .project-1 .text {
 }
 
 section.project .project-2 .wrapper {
-  background: url("/img/haywire.png") no-repeat;
+  background: url("../img/haywire.png") no-repeat;
   background-size: contain;
   background-size: 150%;
   background-position: -80px 0;
@@ -316,6 +349,12 @@ section.skills .banner {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+@media screen and (max-width: 360px) {
+  section.skills .banner {
+    width: 96%;
+  }
 }
 
 section.skills .banner .skill-1 {
@@ -395,11 +434,23 @@ section.history .row {
   margin: 1rem 0;
 }
 
+@media screen and (max-width: 360px) {
+  section.history .row {
+    display: block;
+  }
+}
+
 section.history .job-card {
   width: 45%;
   background-color: #f9f9ff;
   padding: 20px 30px;
   border-radius: 10px;
+}
+
+@media screen and (max-width: 360px) {
+  section.history .job-card {
+    width: 100%;
+  }
 }
 
 section.history .job-card .top-header {
@@ -448,6 +499,12 @@ section.contact .contact-me {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   margin: 50px 0 0 0;
+}
+
+@media screen and (max-width: 360px) {
+  section.contact .contact-me {
+    display: block;
+  }
 }
 
 section.contact .contact-me a {
