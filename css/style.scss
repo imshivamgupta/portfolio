@@ -79,6 +79,9 @@ section.home {
         .nav-link {
             // margin: 0 0 0 auto;
             display: flex;
+            @media screen and (max-width: $break-small) {
+                visibility: hidden;
+            }
             justify-content: flex-end;
             align-items: center;
             width: 100%;
@@ -105,7 +108,6 @@ section.home {
         @media screen and (max-width: $break-small) {
             width: 75%;
             margin: 3rem auto;
-            text-align: left;
         }
         margin: 6rem auto;
         color: white;
@@ -203,9 +205,15 @@ section.project {
         .wrapper {
             background-color: $white;
             min-height: 400px;
+            @media screen and (max-width: $break-small) {
+                min-height: 275px;
+            }
             position: relative;
             overflow: hidden;
-            box-shadow: 0 19px 38px rgba($black, 0.3), 0 15px 12px rgba($black, 0.2);
+            box-shadow: 0 19px 38px rgba($black,
+            0.3),
+            0 15px 12px rgba($black,
+            0.2);
             &:hover {
                 .data {
                     transform: translateY(0);
@@ -242,6 +250,11 @@ section.project {
             background-size: contain;
             background-size: 175%;
             background-position: -160px 0;
+            @media screen and (max-width: $break-small) {
+                background-size: 160%;
+                background-position: -215px 0;
+                margin-bottom: .6rem;
+            }
         }
         .data {
             transform: translateY(calc(84px + 1em));
@@ -265,6 +278,9 @@ section.project {
             background-size: contain;
             background-size: 150%;
             background-position: -80px 0;
+            @media screen and (max-width: $break-small) {
+                background-position: -76px -84px;
+            }
         }
         .data {
             transform: translateY(calc(84px + 1em));
@@ -352,6 +368,9 @@ section.history {
     }
     .experience {
         width: 80%;
+        @media screen and (max-width: $break-small) {
+            width: 100%;
+        }
         margin: 0 auto;
     }
     .row {
