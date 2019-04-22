@@ -8,8 +8,7 @@ new Fullpage('#fullpage', {
 });
 const resume = document.querySelector('#btn_resume');
 resume.addEventListener('click', () => {
-  window.location = './resume.pdf';
-  alert();
+  window.location = 'resume_v1.pdf';
 });
 
 },{"fullpage.js":2}],2:[function(require,module,exports){

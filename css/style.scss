@@ -219,7 +219,7 @@ section.project {
     // First example styles
     .project-1 {
         .wrapper {
-            background: url('/img/screen.png') no-repeat;
+            background: url('../img/screen.png') no-repeat;
             background-size: contain;
             background-size: 175%;
             background-position: -160px 0;
@@ -242,7 +242,7 @@ section.project {
     }
     .project-2 {
         .wrapper {
-            background: url('/img/haywire.png') no-repeat;
+            background: url('../img/haywire.png') no-repeat;
             background-size: contain;
             background-size: 150%;
             background-position: -80px 0;
